@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <header>
+        <h1>Formulário</h1>
+    </header>
+
+    <hr>
+
+    <nav>
+        <li><a href="">Home</a></li>
+        <li><a href="">Informática</a></li>
+        <li><a href="">Contato</a></li>
+    </nav>
+
+    <hr>
+        
+
+    <main>
+
+    
+        <section>
+            <h2>Contato</h2>
+            <p>Entre em contato para informações ou reclamações sobre o serviço</p>
+        </section>
+        <section>
+            <form action="" method="post">
+                <!--Padrão do elemento form, quando não existe a definição do action
+                    é que, quando enviado, o formulário "irá" para a mesma pagina-->
+                <!--POST: envia dados para o servidor no corpo de solicitação
+                    GET: parâmetros que são passados pela URL visiveis na barra de endereço-->
+                <label>Nome: </label>
+                <input type="text" name="nome" id="nome">
+
+                <label>Email: </label>
+                <input type="email" name="email" id="email">
+                <br><br>
+                <fieldset>
+                    <!--O fieldset cria uma "caixinha" para delimitar campos em comum-->
+                    <legend>Dados Pessoais</legend>
+                    <!--Cria uma legenda para especificar quais são esses "campos em comum"-->
+                    <label>Endereço: </label>
+                    <br>
+                    <textarea name="endereco" id="endereco" cols="80" rows="5">
+                    </textarea>
+                    <br>
+                    <label>Estado: </label>
+                    <select name="estado" id="estado">
+                        <optgroup label="Sudeste">
+                            <option value="sp">São Paulo</option>
+                        </optgroup>
+                        <optgroup label="Sul">
+                            <option value="rs">Rio Grande do Sul</option>
+                        </optgroup>
+                    </select>
+                    <!--O select cria opções para o usuario escolher, ele é vantajoso quando
+                      queremos limitar quais respostas serão dadas para certos campos.
+                      É possível agrupar opções (options) por meio do elemento outgroup, ele cria
+                      uma etiqueta para definir elementos em comum-->
+                      <br><br>
+                    <label>Altura: </label>
+                    <input type="number" name="altura" id="altura" step="0.1" min="0" max="3">
+                    <!--Input tipo numero (number) pode ser utilizado em conjunto
+                      com o atributo step, que define a variação desse numero-->
+                    <label>Data: </label>
+                    <input type="date" name="data" id="data">
+                    <br><br>
+                    <label>Cidade: </label>
+                    <input list="cidade" name="cidade" id="cidade">
+                    <datalist id="cidade">
+                        <option value="">Araraquara</option>
+                        <option value="">São Carlos</option>
+                        <option value="">Ibaté</option>
+                    </datalist>
+                </fieldset>
+                <br>
+                <center>
+                    <input type="submit" value="Enviar">
+                </center>
+                
+
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <center>
+            &copy: Formulário de Envio
+        </center>
+    </footer>
+    
+</body>
+</html>
