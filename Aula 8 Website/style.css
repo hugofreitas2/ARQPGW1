@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(64, 218, 64);
+    color: #fff;
+}
+
+
+
+.imagem1 {
+    width: 700px;
+    height: 300px;
+}
+
+.imagem2 {
+    width: 800px;
+    height: 400px;
+}
+
+footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
