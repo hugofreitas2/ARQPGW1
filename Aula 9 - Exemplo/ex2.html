@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            padding: 20px;
+            background-color: green;
+            box-sizing: content-box;
+        }
+
+        .box2{
+            width: 150px;
+            height: 150px;
+            padding: 20px;
+            background-color: white;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Caixa 1
+    </div>
+    <div class="box2">
+        Caixa 2
+    </div>
+    <div>
+        <br><br>
+        A caixa 1 ficou com 190x190, enquanto a caixa 2 ficou com 150x150
+    </div>
+</body>
+</html>
