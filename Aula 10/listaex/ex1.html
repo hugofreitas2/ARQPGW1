@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+    <style>
+        .container{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .item{
+            flex:1 1 200px;
+            align-self: stretch;
+        }
+        .item:nth-child(2){
+            flex-grow:2;
+        }
+        .item:nth-child(4){
+            order: -1;
+            flex-basis:300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+    <h3>Ex 1</h3>
+    <p>Coloca os items um seguido do outro</p>
+    <h3>Ex 2</h3>
+    <p>Column: coloca um item embaixo do outro</p>
+    <p>row-reverse: somem os items</p>
+    <p>column-reverse: inverte a ordem dos items</p>
+    <h3>Ex 3</h3>
+    <p>Center: deixa os items no meio da pagina no canto esquerdo</p>
+    <p>space-between: deixa um encima, um no meio e um embaixo</p>
+    <p>space-around: parecido com space between so que com espaços antes</p>
+    <p>space-evenly: afunila os elementos mais ao centro</p>
+    <p>flex-start: coloca os elementos ao fim da pagina</p>
+    <p>flex-end: coloca os elementos no inicio da pagina</p>
+    <h3>Ex 4</h3>
+    <p>Center: deixa o item centralizado ao meio da pagina</p>
+    <p>flex-start: coloca os elementos no canto esquerdo da pagina</p>
+    <p>flex-end: coloca os elementos no canto direito da pagina</p>
+    <p>baseline: mesma coisa que flex-start</p>
+    <p>stretch: mesma coisa que flex-start só que inverte a ordem dos items</p>
+    <h3>Ex 5</h3>
+    <p>wrap: não mudou nada</p>
+    <p>nowrap: continua sem mudanças</p>
+    <p>wrap-reverse: colocou os items do lado direito da pagina</p>
+    <h3>Ex 6</h3>
+    <p>Item em questão cresceu um pouco a mais</p>
+    <h3>Ex 7</h3>
+    <p>O tamanho do item 3 não muda, diferente do item1 e item2 ao reduzir a pagina</p>
+    <h3>Ex 8</h3>
+    <p>Mantem tamanho fixo e achata os outros elementos ao diminuir a pagina</p>
+    <h3>Ex 9</h3>
+    <p>Item 1 se solta dos outros e fica mais abaixo do alinhamento</p>
+    <h3>Ex 10</h3>
+    <p>Item 3 passa a ser o primeiro no alinhamento</p>
+    <h3>Ex 11</h3>
+    <p>Nenhuma mudança aparente em nenhum dos items</p>
+    <h3>Ex 12</h3>
+    <p>Aumentou o espaçamento entre os items</p>
+    <h3>Ex 13</h3>
+    <p>Os items se alinham em cantos opostos</p>
+    <h3> Ex 14</h3>
+    <p>A propriedade flex aumentou os items a ponto de ocupar a pagina de uma margem a outra, variando de acordo com a mudança de valores
+        e propriedades
+    </p>
+    <h3>Ex 15</h3>
+    <p>Colocou os três items ao topo da pagina, espaçados entre si de acordo com as coordenadas cedidas nos nth:child, variando de acordo com os
+        tamanhos passados
+    </p>
+    <h3>Ex 16</h3>
+    <p>Se a tela está ampliada, eles ficam ao canto superior esquerdo, alinhados em ordem, e caso a tela esteja minimizada em janela pequena, eles ficam
+        empilhados ao centro
+    </p>
+    <h3>Ex 17</h3>
+    <p>A pagina centraliza os três items ao meio da tela, deixando a pagina inicial apenas os três, com as respostas das perguntas abaixo</p>
+    <h3>Ex 18</h3>
+    <p>Os items foram distribuidos no superior da pagina, sobre uma linha preta, em um formato display como uma pagina de busca</p>
+    <h3>Ex 19</h3>
+    <p>Eles ocupam um espaço igual entre si</p>
+    <h3>Ex 20</h3>
+    <p>O resultado foi que o item 4 aparece primeiro devido ao comando "order - 1" alinhando todos os elementos ao canto esquerdo da tela
+        com espaçamentos diferentes no que diz relação aos comandos utilizados
+    </p>
+</body>
+</html>

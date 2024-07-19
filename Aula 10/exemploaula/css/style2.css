@@ -1,0 +1,75 @@
+body.html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Inlcuir preenchimento e as margens dentro das
+    dimensões totais do elemento*/
+}
+
+main{
+    display: flex;
+    /*Utilizar o flexbox para organizar os elementos filhos*/
+    flex-direction: column;
+    /*Organizar os elementos filhos em colunas*/
+    min-height: 100vh;
+    margin: 0 10px;
+}
+
+header.main.footer{
+    padding: 20px;
+    border: lpx solid #CCC;
+    margin: 10px 0;
+}
+
+header{
+    background-color: lightblue;
+    text-align: center;
+}
+
+main{
+    background-color: lightgreen;
+    flex: 1;
+    /*Permite que o elemento cresça e ocupe o espaço
+    disponivel */
+}
+
+footer{
+    background-color: lightcoral;
+    text-align: center;
+}
+
+.chart{
+    width: 100%;
+    height: 400px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats{
+    margin: 20px 0;
+}
+
+@media(min-width:768px){
+    /*Aplica as regras desse bloco para a tela com
+    largura minima de 768px */
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*Permite que os elementos fisicos quebrem para
+    a proxima linha */
+}
+
+header.footer{
+    flex: 1 1 100%;
+    /*Define que os elementos ocuparam 100% da largura
+    mas podem crescer e encolher conforme o necessário */
+}
+
+main{
+    flex:2 1 100%;
+    /*Permite que o elemento ocupe duas vezes o espaço
+    disponivel para os outros itens */
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoção do ITIL V4 em Empresas de TI</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Adoção do ITIL V4 em Empresas de TI</h1>
+        </header>
+    </div>
+    <main>
+        <h2>Introdução</h2>
+        <p>
+            O ITIL V4 é um framework de práticas recomendadas para
+            a gestão de serviços de TI.Esse estudo examina a Adoção
+            do ITIL V4 em diversas empresas de TI e os beneficios 
+            observados.
+        </p>
+        <div class="chart container">
+            <canvas id="adoptionChart" class="chart"></canvas>
+        </div>
+        <div class="status">
+            <h3>Estatisticas de Adoção</h3>
+            <ul>
+                <li>80% das empresas de grande porte adotaram o ITIL V4</li>
+                <li>60% das empresas de pequeno médio adotaram o ITIL V4</li>
+                <li>30% das empresas de pequeno porte adotaram o ITIL V4</li>
+            </ul>
+        </div>
+        <div class="benefits">
+            <h3>Beneficios da Adoção do ITIL V4</h3>
+            <ul>
+                <li>Melhoria na eficiência operacional</li>
+                <li>Redução de custos</li>
+                <li>Maior satisfação do cliente</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy>2024 Estudo de Adoção do ITIL V4</p>
+    </footer>
+</body>
+<script>
+    const ctx = document.getElementById('adoptionChart').getContext('2d');
+    const adoptionChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Grande Porte', 'Médio Porte', 'Pequeno Porte'],
+            datasets: [{
+                label: 'Porcentagem de Adoção',
+                data: [80, 60, 30],
+                backgroundColor: [
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(255, 206, 86, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(255, 206, 86, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+</html>
