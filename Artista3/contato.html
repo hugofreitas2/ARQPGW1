@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <h2>Outras Sessões</h2>
+    <nav>
+        <ul>
+            <li><a href="home.html">Homepage</a></li>
+            <li><a href="biografia.html">Biografia</a></li>
+            <li><a href="discografia.html">Discografia</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+        <hr><hr>
+    </nav>
+    <section>
+    <h2>Contato com a banda</h2>
+    <p>Para contato com a Banda ficam aqui os links das páginas oficiais da banda:</p>
+    <li><a href="https://www.instagram.com/officialmisfits/">Instagram da Banda</a></li>
+    <li><a href="https://store.misfits.com/">Loja Oficial da Banda</a></li>
+    <p>Para outros contatos tomem cuidado com golpes e links não oficiais!</p>
+    </section>
+    <section>
+        <h2>Deixe o seu contato para o fã-clube</h2>
+        <form method="post">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label>Nome:</label>
+                <input type="text" name="nome" id="nome">
+                <br><br>
+                <label>Email:</label>
+                <input type="email" name="email" id="email">
+                <br><br>
+                <label>Senha:</label>
+                <input type="password" name="password" id="password">
+                <br><br>
+                <label>Telefone:</label>
+                <input type="tel" name="telefone" id="telefone">
+                <br><br>
+                <label>Idade:</label>
+                <input type="number" name="idade" id="idade" step="1" min="0" max="120">
+                <br><br>
+                <label>Data de Aniversário:</label>
+                <input type="date" name="datanasc" id="datanasc">
+            </fieldset>
+            <fieldset>
+                <legend>Preferências</legend>
+                <label>Gênero Musical:</label>
+                <select name="generomusc" id="generomusc">
+                    <option value="classicrock">Classic Rock</option>
+                    <option value="hardrock">Hard Rock</option>
+                    <option value="metal">Heavy Metal</option>
+                    <option value="horrorrock">Horror Rock</option>
+                </select>
+                    <br><br>
+                    <h3>Instrumentos Musicais que gosta:</h3>
+                    <input type="checkbox" id="guitarra" name="guitarra" value="guitarra"/>
+                    <label>Guitarra</label>
+                    <input type="checkbox" id="bateria" name="bateria" value="bateria"/>
+                    <label>Bateria</label>
+                    <input type="checkbox" id="baixo" name="baixo" value="baixo"/>
+                    <label>Baixo</label>
+                    <input type="checkbox" id="piano" name="piano" value="piano"/>
+                    <label>Piano</label>
+                    <input type="checkbox" id="sax" name="sax" value="sax"/>
+                    <label>Saxofone</label>
+                    <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Biografia</legend>
+                <label>Digite algo sobre você:</label>
+                <br>
+                <textarea name="biografia" id="biografia" cols="50" rows="8"></textarea>
+                <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Foto</legend>
+                <label>Coloque aqui uma foto sua:</label>
+                <input type="file" name="foto" id="foto">
+            </fieldset>
+            <br><br>
+            <center><input type="submit" value="Enviar"></center>
+        </form>
+    </section>
+    <hr><hr>
+</body>
+<footer>
+    <p>&copy: 2024 Misfits Official.</p>
+</footer>
+</html>
